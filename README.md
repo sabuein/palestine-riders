@@ -11,6 +11,21 @@
 npm run api
 ```
 
+## SQL
+
+```sql
+CREATE DATABASE palestine_riders;
+USE palestine_riders;
+CREATE TABLE riders (id INT NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, email VARCHAR(50), PRIMARY KEY (id));
+SHOW TABLES;
+DESCRIBE riders;
+INSERT INTO riders VALUES (1, "Salaheddin AbuEin", "sabuein@gmail.com");
+SELECT * FROM riders;
+CREATE USER "riders"@"localhost" IDENTIFIED BY "myPassword";
+GRANT ALL PRIVILEGES ON palestine_riders.* TO "riders"@"localhost";
+\q
+```
+
 ### Resources
 
 - Express routing ([Basic][basic], [Routing][routing], [API][api])

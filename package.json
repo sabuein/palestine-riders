@@ -4,6 +4,7 @@
   "description": "TODO",
   "main": "./assets/js/api.js",
   "scripts": {
+    "api": "node ./api/src/index.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,6 @@
   },
   "homepage": "https://github.com/sabuein/palestine-riders#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "4.18.2"
   }
 }

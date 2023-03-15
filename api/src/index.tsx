@@ -6,9 +6,9 @@ const port = 4435;
 
 app.get("/", (req, res) => {
     res.send("Bismillah.");
-    console.log(`Listening on http://localhost:${port}`);
+    console.log(`New request on http://localhost:${port}`);
 });
 
 app.listen(port, () => {
-    console.log(`Server started on http://localhost:${port}`);
+    console.log(`API started on http://localhost:${port}`);
 });

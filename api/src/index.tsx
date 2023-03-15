@@ -1,14 +1,18 @@
 "use strict";
 
 const express = require("express");
-const app = express();
+const api = express();
 const port = 4435;
+const host = "http://localhost";
 
-app.get("/", (req, res) => {
+api.get("/", (req, res) => {
+    console.dir(req);
     res.send("Bismillah.");
-    console.log(`New request on http://localhost:${port}`);
+    console.log(`New request from ${host}:${port}`);
 });
 
-app.listen(port, () => {
-    console.log(`API started on http://localhost:${port}`);
+const server = api.listen(port, (error) => {
+    (error) ?
+        console.error(error) :
+        console.log(`API started on ${host}:${port}`);
 });
